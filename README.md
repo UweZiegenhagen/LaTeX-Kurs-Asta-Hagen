@@ -17,10 +17,10 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
  * Welches Fach studieren Sie?
  * Haben Sie Vorkenntnisse in TeX/LaTeX?
  * Wofür möchten Sie LaTeX nutzen?
-* TeX Live installieren. Dazu am besten aus dem schnellen Uni-Netz:
+2. TeX Live installieren. Dazu am besten aus dem schnellen Uni-Netz:
  * Die Seite http://tug.org/texlive/acquire-netinstall.html besuchen und den Installer herunterladen und ausführen. Ich empfehle die Komplett-Installation.
  * Mac User nutzen bitte den Link http://www.tug.org/mactex/ und laden sich den Installer bitte von dort.
-* Einen kostenlosen Account bei github (https://github.com/) anlegen, falls noch keiner vorhanden ist.
+3. Einen kostenlosen Account bei github (https://github.com/) anlegen, falls noch keiner vorhanden ist.
 
 ## Vorläufige Agenda
 
