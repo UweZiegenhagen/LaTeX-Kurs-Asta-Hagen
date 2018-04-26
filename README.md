@@ -3,11 +3,11 @@
 * Wann: am 09.06.2018 und 10.06.2018
 * Wo: In der Bildungsherberge der Fernuni Hagen
 
-
+´´´
 Bildungsherberge FernUniversität Hagen
 Roggenkamp 10
 58093 Hagen
-
+´´´
 
 In dieses github-Repository lege ich alle Dateien, die im Laufe des Wochenend-Kurses erstellt werden.
 
