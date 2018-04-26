@@ -37,6 +37,9 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 
 * 15:00 Uhr: Tabellen
 
+* 16:00 Uhr: Ende des ersten Tages
+
+
 ### Sonntag (noch sehr vorläufig)
 
 * 09:00 Uhr: Einfache Grafiken erzeugen mit TikZ
@@ -50,3 +53,5 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 * 15:00 Uhr: Briefe schreiben mit scrlttr2
 
 * 16:00 Uhr: Frage und Antwort-Runde
+
+* 17:00 Uhr: Ende des zweiten Tages, Ausgabe der Teilnahmeurkunden
