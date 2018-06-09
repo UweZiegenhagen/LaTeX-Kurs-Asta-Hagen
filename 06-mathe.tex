@@ -4,6 +4,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 
+\usepackage[]{esvect}
+\usepackage[]{nicefrac}
 % für michas fotoalbum
 
 %\usepackage[landscape,left=1cm,right=1cm,bottom=2.5cm, top=1cm]{geometry}
@@ -51,6 +53,15 @@
     urlcolor=blue                        % color of external links
 }
 
+\usepackage[]{stix}
+
+\makeatletter
+\newcommand*\avg{%
+\mathop{\operator@font
+avg}}
+\makeatother
+
+
 \begin{document}
 \maketitle
 
@@ -79,10 +90,81 @@ Irgendein Text.
 
 \blindtext[2]
 
-Abc \( a + b = c\) def
+\section{Mathesatz}
 
-Abc \( a + b = c\) def
+$a^2$ ist \TeX-Notation.
+
+Abc \( a^2 + b^2 = c^2\) def
+
+Abc \[ a^2 + b^2 = c^2\] def % $$ a^2 + b^2 = c^2$$
 
 
+\begin{equation}
+a^2 + b^2 = c^2
+\end{equation}
+
+\begin{equation}
+\frac{a^2 + b^2 = c^2}{a^2 + b^2 = c^2}
+\end{equation}
+
+\begin{equation}
+-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 - q  }
+\end{equation}
+
+
+\begin{equation}
+\sum_{i=1}^{\infty} i
+\end{equation}
+
+\begin{equation}
+\prod_{i=1}^{\infty} i
+\end{equation}
+
+\begin{equation}
+\bigtimes_{i=1}^{\infty} i
+\end{equation}
+
+
+\begin{equation}
+\overbrace{\bigtimes_{i=1}^{\infty} i}^{a\times b}
+\end{equation}
+
+\begin{equation}
+sin 45 \not= \sin 45 \avg
+\end{equation}
+
+\begin{eqnarray}
+y &=& (a+ b)^2 \\
+  &=& a^2 + 2ab + b^2
+\end{eqnarray}
+
+\begin{eqnarray*}
+y &=& (a+ b)^2 \\
+  &=& a^2 + 2ab + b^2
+\end{eqnarray*}
+
+\section*{Ich bin nicht im ToC}
+
+\[
+\bordermatrix{%
+ & 0 & 1 & 2 \cr
+0 & A & B & C \cr
+1 & d & e & f \cr
+2 & 1 & 2 & 3 \cr
+}
+\]
+
+\( a_{111}+ b_1 =  \vec{c_1} \times \vec{c}_1  \times \vv{c_1}   \)
+
+\( \alpha + \beta = \gamma\)
+
+\( \alpha + \beta = \Gamma\)
+
+
+Fließtext-Integrale sind kleiner \( \int_{i=1}^{\infty} \)
+
+\[ \int_{i=1}^{\infty} \]
+
+\[ \nicefrac{a}{2}\]
 
 \end{document}
