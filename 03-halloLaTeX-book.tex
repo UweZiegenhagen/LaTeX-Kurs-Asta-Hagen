@@ -1,8 +1,12 @@
-\documentclass[12pt,ngerman]{scrbook}
+\documentclass[15pt,ngerman]{scrbook}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
+
+% Beispieldefinition für \person{}
+
+\newcommand{\person}[1]{\textsc{#1}}
 
 \author{Uwe Ziegenhagen}
 \title{Mein allererstes \LaTeX-Dokument}
@@ -10,6 +14,11 @@
 
 \usepackage{blindtext}
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\usepackage{microtype}
+\usepackage{graphicx}
 
 \usepackage{hyperref} % immer als letztes Paket
 
@@ -66,6 +75,44 @@ Irgendein Text.
 
 \section{Danksagung}
 
-Danke!
+Hallo Welt, ich bin ein Stück Text.
+
+Hallo Welt, ich bin ein Stück Text.
+
+Hallo ich bin ein \textbf{fettes} Wort.
+
+Hallo ich bin ein \textit{kursives} Wort.
+
+Hallo ich bin ein \textbf{\textit{fett-kursives}} Wort.
+
+Hallo ich bin ein \textsc{kapitälchen} Wort.
+
+Hallo ich bin ein \textsl{geneigtes} Wort.
+
+Hallo ich bin ein \textit{kursives} Wort.
+
+\person{Uwe Ziegenhagen}
+
+{\tiny Uwe Ziegenhagen}
+
+{\scriptsize Uwe Ziegenhagen}
+
+{\footnotesize Uwe Ziegenhagen}
+
+{\small Uwe Ziegenhagen}
+
+{\normalsize Uwe Ziegenhagen}
+
+{\large Uwe Ziegenhagen}
+
+{\Large Uwe Ziegenhagen}
+
+{\LARGE Uwe Ziegenhagen}
+
+{\huge Uwe Ziegenhagen}
+
+{\Huge Uwe Ziegenhagen}
+
+\scalebox{50}{U}
 
 \end{document}
