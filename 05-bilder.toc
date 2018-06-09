@@ -1,7 +1,7 @@
 \babel@toc {ngerman}{}
 \contentsline {chapter}{\numberline {1}Das allererste Kapitel, los geht's}{4}{chapter.1}
 \contentsline {section}{\numberline {1.1}Einleitung des ersten Dokuments, was ich wo geschrieben hab}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Hauptteil}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Einleitung zum Hauptteil}{5}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.2}Hauptteil}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Einleitung zum Hauptteil}{4}{subsection.1.2.1}
 \contentsline {subsubsection}{\nonumberline Hauptteil}{5}{section*.3}
 \contentsline {section}{\numberline {1.3}Fazit}{6}{section.1.3}
