@@ -1,0 +1,136 @@
+\documentclass[15pt,ngerman]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+% Beispieldefinition für \person{}
+
+\newcommand{\person}[1]{\textsc{#1}}
+
+\author{Uwe Ziegenhagen}
+\title{Mein allererstes \LaTeX-Dokument}
+%\date{1. Januar 2018}
+
+\usepackage{blindtext}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+
+\usepackage{paralist} %kompakte Aufzählungen
+
+\usepackage{hyperref} % immer als letztes Paket
+
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{Das allererste Kapitel, los geht's}
+
+\section{Einleitung des ersten Dokuments, was ich wo geschrieben hab}
+
+\blindtext
+
+\section{Hauptteil}
+
+\subsection{Einleitung zum Hauptteil}
+
+Irgendein Text.
+
+\subsubsection{Hauptteil}
+
+
+\blindtext[2]
+
+\blindtext[2]
+
+
+\section{Fazit}
+
+\blindtext[100]
+
+
+\section{Danksagung}
+
+Hallo Welt, ich bin ein Stück Text.
+
+Hallo Welt, ich bin ein Stück Text.
+
+Hallo ich bin ein \textbf{fettes} Wort.
+
+Hallo ich bin ein \textit{kursives} Wort.
+
+Hallo ich bin ein \textbf{\textit{fett-kursives}} Wort.
+
+Hallo ich bin ein \textsc{kapitälchen} Wort.
+
+Hallo ich bin ein \textsl{geneigtes} Wort.
+
+Hallo ich bin ein \textit{kursives} Wort.
+
+\person{Uwe Ziegenhagen}
+
+\begin{itemize}[\(\cup\)]
+\item Hallo,
+\item ich bin
+\item eine Liste
+\end{itemize}
+
+\begin{compactitem}
+\item Hallo,
+\item ich bin
+\item eine Liste
+\end{compactitem}
+
+\begin{enumerate}
+\item Hallo,
+\item ich bin
+\item eine Liste
+\end{enumerate}
+
+\begin{compactenum}
+\item Hallo,
+\item ich bin
+\item eine Liste
+\end{compactenum}
+
+
+\begin{description}
+\item [Katzen] sind niedlich
+\item [Hunde] beißen
+\item [Rinder] muhen
+\end{description}
+
+
+\begin{compactdesc}
+\item [Katzen] sind niedlich
+\item [Hunde] beißen
+\item [Rinder] muhen
+\end{compactdesc}
+
+\end{document}
