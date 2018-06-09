@@ -39,7 +39,6 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 
 * 16:00 Uhr: Ende des ersten Tages
 
-
 ### Sonntag (noch sehr vorläufig)
 
 * 09:00 Uhr: Einfache Grafiken erzeugen mit TikZ
