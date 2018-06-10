@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage[pdf]{graphviz}
+
+\begin{document}
+   \digraph{abc}{
+      rankdir=LR;
+      a -> b -> c;
+      b -> a;
+      c -> c;
+   }
+\end{document}
