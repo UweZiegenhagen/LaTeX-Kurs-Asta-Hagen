@@ -1,3 +1,5 @@
+# Hinweise: In den nächsten Tagen (bis Ende Juni) werde ich versuchen, alle TeX-Dateien noch ein wenig zu kommentieren.
+
 # Materialien für den LaTeX Kurs am 09.06. und 10.06. an der Fernuni Hagen
 
 * Wann: am 09.06.2018 und 10.06.2018
@@ -16,6 +18,7 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
  * Die Seite http://tug.org/texlive/acquire-netinstall.html besuchen und den Installer herunterladen und ausführen. Ich empfehle die Komplett-Installation.
  * Mac User nutzen bitte den Link http://www.tug.org/mactex/ und laden sich den Installer bitte von dort.
 3. Einen kostenlosen Account bei github (https://github.com/) anlegen, falls noch keiner vorhanden ist.
+
 
 ## Agenda
 
