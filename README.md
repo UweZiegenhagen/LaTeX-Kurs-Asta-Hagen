@@ -17,7 +17,7 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
  * Mac User nutzen bitte den Link http://www.tug.org/mactex/ und laden sich den Installer bitte von dort.
 3. Einen kostenlosen Account bei github (https://github.com/) anlegen, falls noch keiner vorhanden ist.
 
-## Vorläufige Agenda (wird sich noch ändern)
+## Agenda
 
 ### Samstag
 
@@ -35,15 +35,19 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 
 * 15:00 Uhr: Bilder
 
-* 15:00 Uhr: Tabellen
+* 15:00 Uhr: Mathematiksatz
 
 * 16:00 Uhr: Ende des ersten Tages
 
-### Sonntag (noch sehr vorläufig)
+### Sonntag
 
-* 09:00 Uhr: Einfache Grafiken erzeugen mit TikZ
+* 08:30 Uhr: Q & A zum ersten Tag
+
+* 09:00 Uhr: Tabellensatz
 
 * 10:00 Uhr: Bibliografien verwalten und setzen
+
+* 11:00 Uhr: Einfache Grafiken erzeugen mit TikZ
 
 * 12:00 Uhr: Mittagspause
 
