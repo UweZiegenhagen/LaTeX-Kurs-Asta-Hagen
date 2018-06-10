@@ -41,9 +41,7 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 
 ### Sonntag
 
-* 08:30 Uhr: Q & A zum ersten Tag
-
-* 09:00 Uhr: Tabellensatz
+* 09:00 Uhr: Code-Listings einbinden und Tabellensatz
 
 * 10:00 Uhr: Bibliografien verwalten und setzen
 
