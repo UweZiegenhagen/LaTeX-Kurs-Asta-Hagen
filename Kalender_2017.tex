@@ -1,0 +1,480 @@
+\documentclass[fontsize=6pt]{scrartcl}
+\usepackage[a4paper,landscape,left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm]{geometry}
+ 
+\usepackage[]{ifdraft}
+\usepackage[]{attachfile}
+\usepackage[]{eso-pic}
+ 
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+ 
+\renewcommand{\familydefault}{\sfdefault}
+\RequirePackage[scaled=0.9]{helvet}
+\usepackage{tikz}
+\usepackage[right]{showlabels}
+\usetikzlibrary{positioning}
+\pagestyle{empty}
+ 
+\usepackage{xcolor}
+ 
+\usepackage{hyperref}
+\usepackage{url}
+ 
+\definecolor{saturdaycolor}{RGB}{220,220,250}
+\definecolor{sundaycolor}{RGB}{170,170,250}
+\newcommand{\file}[1]{\textattachfile{#1}{\textcolor{blue}{\LaTeX\ Sourcecode}}}
+ 
+\begin{document}  
+ 
+\AddToShipoutPictureFG*{
+  \put(35,10){\footnotesize Uwe Ziegenhagen, ziegenhagen@gmail.com, \file{\jobname.tex}	
+}
+}
+ 
+\begin{center}
+\begin{tikzpicture}
+[
+    x=23mm,y=6mm,
+    mybox/.style={rectangle,rounded corners,minimum width=23mm, minimum height=6mm},
+	month/.style={mybox,align=center,draw=black,fill=yellow,thick,font=\bfseries\Large},
+    date/.style={mybox,draw=gray,fill=yellow,align=left,thick,minimum width=5mm,font=\bfseries\Large},
+    day/.style={mybox,draw=black,align=left,font=\bfseries\Large},
+    saturday/.style={mybox,draw=black,align=left,fill=saturdaycolor,font=\bfseries\Large},
+    sunday/.style={mybox,draw=black,align=left,fill=sundaycolor,font=\bfseries\Large}
+]
+\node at (0,0) [month] {Januar};
+\node at (1,0) [month] {Februar};
+\node at (2,0) [month] {März};
+\node at (3,0) [month] {April};
+\node at (4,0) [month] {Mai};
+\node at (5,0) [month] {Juni};
+\node at (6,0) [month] {Juli};
+\node at (7,0) [month] {August};
+\node at (8,0) [month] {September};
+\node at (9,0) [month] {Oktober};
+\node at (10,0) [month] {November};
+\node at (11,0) [month] {Dezember};
+ 
+\node at (-0.6,-1) [date] {01};
+\node at (-0.6,-2) [date] {02};
+\node at (-0.6,-3) [date] {03};
+\node at (-0.6,-4) [date] {04};
+\node at (-0.6,-5) [date] {05};
+\node at (-0.6,-6) [date] {06};
+\node at (-0.6,-7) [date] {07};
+\node at (-0.6,-8) [date] {08};
+\node at (-0.6,-9) [date] {09};
+\node at (-0.6,-10) [date] {10};
+\node at (-0.6,-11) [date] {11};
+\node at (-0.6,-12) [date] {12};
+\node at (-0.6,-13) [date] {13};
+\node at (-0.6,-14) [date] {14};
+\node at (-0.6,-15) [date] {15};
+\node at (-0.6,-16) [date] {16};
+\node at (-0.6,-17) [date] {17};
+\node at (-0.6,-18) [date] {18};
+\node at (-0.6,-19) [date] {19};
+\node at (-0.6,-20) [date] {20};
+\node at (-0.6,-21) [date] {21};
+\node at (-0.6,-22) [date] {22};
+\node at (-0.6,-23) [date] {23};
+\node at (-0.6,-24) [date] {24};
+\node at (-0.6,-25) [date] {25};
+\node at (-0.6,-26) [date] {26};
+\node at (-0.6,-27) [date] {27};
+\node at (-0.6,-28) [date] {28};
+\node at (-0.6,-29) [date] {29};
+\node at (-0.6,-30) [date] {30};
+\node at (-0.6,-31) [date] {31};
+ 
+\node at (0,-1) [day] {};
+\node at (0,-2) [day] {};
+\node at (0,-3) [day] {};
+\node at (0,-4) [day] {};
+\node at (0,-5) [day] {};
+\node at (0,-6) [saturday] {};
+\node at (0,-7) [sunday] {};
+\node at (0,-8) [day] {};
+\node at (0,-9) [day] {};
+\node at (0,-10) [day] {};
+\node at (0,-11) [day] {};
+\node at (0,-12) [day] {};
+\node at (0,-13) [saturday] {};
+\node at (0,-14) [sunday] {};
+\node at (0,-15) [day] {};
+\node at (0,-16) [day] {};
+\node at (0,-17) [day] {};
+\node at (0,-18) [day] {};
+\node at (0,-19) [day] {};
+\node at (0,-20) [saturday] {};
+\node at (0,-21) [sunday] {};
+\node at (0,-22) [day] {};
+\node at (0,-23) [day] {};
+\node at (0,-24) [day] {};
+\node at (0,-25) [day] {};
+\node at (0,-26) [day] {};
+\node at (0,-27) [saturday] {};
+\node at (0,-28) [sunday] {};
+\node at (0,-29) [day] {};
+\node at (0,-30) [day] {};
+\node at (0,-31) [day] {};
+
+
+\node at (1,-1) [day] {};
+\node at (1,-2) [day] {};
+\node at (1,-3) [saturday] {};
+\node at (1,-4) [sunday] {};
+\node at (1,-5) [day] {};
+\node at (1,-6) [day] {};
+\node at (1,-7) [day] {};
+\node at (1,-8) [day] {};
+\node at (1,-9) [day] {};
+\node at (1,-10) [saturday] {};
+\node at (1,-11) [sunday] {};
+\node at (1,-12) [day] {};
+\node at (1,-13) [day] {};
+\node at (1,-14) [day] {};
+\node at (1,-15) [day] {};
+\node at (1,-16) [day] {};
+\node at (1,-17) [saturday] {};
+\node at (1,-18) [sunday] {};
+\node at (1,-19) [day] {};
+\node at (1,-20) [day] {};
+\node at (1,-21) [day] {};
+\node at (1,-22) [day] {};
+\node at (1,-23) [day] {};
+\node at (1,-24) [saturday] {};
+\node at (1,-25) [sunday] {};
+\node at (1,-26) [day] {};
+\node at (1,-27) [day] {};
+\node at (1,-28) [day] {};
+
+
+
+\node at (2,-1) [day] {};
+\node at (2,-2) [day] {};
+\node at (2,-3) [saturday] {};
+\node at (2,-4) [sunday] {};
+\node at (2,-5) [day] {};
+\node at (2,-6) [day] {};
+\node at (2,-7) [day] {};
+\node at (2,-8) [day] {};
+\node at (2,-9) [day] {};
+\node at (2,-10) [saturday] {};
+\node at (2,-11) [sunday] {};
+\node at (2,-12) [day] {};
+\node at (2,-13) [day] {};
+\node at (2,-14) [day] {};
+\node at (2,-15) [day] {};
+\node at (2,-16) [day] {};
+\node at (2,-17) [saturday] {};
+\node at (2,-18) [sunday] {};
+\node at (2,-19) [day] {};
+\node at (2,-20) [day] {};
+\node at (2,-21) [day] {};
+\node at (2,-22) [day] {};
+\node at (2,-23) [day] {};
+\node at (2,-24) [saturday] {};
+\node at (2,-25) [sunday] {};
+\node at (2,-26) [day] {};
+\node at (2,-27) [day] {};
+\node at (2,-28) [day] {};
+\node at (2,-29) [day] {};
+\node at (2,-30) [day] {};
+\node at (2,-31) [saturday] {};
+
+\node at (3,-1) [sunday] {};
+\node at (3,-2) [day] {};
+\node at (3,-3) [day] {};
+\node at (3,-4) [day] {};
+\node at (3,-5) [day] {};
+\node at (3,-6) [day] {};
+\node at (3,-7) [saturday] {};
+\node at (3,-8) [sunday] {};
+\node at (3,-9) [day] {};
+\node at (3,-10) [day] {};
+\node at (3,-11) [day] {};
+\node at (3,-12) [day] {};
+\node at (3,-13) [day] {};
+\node at (3,-14) [saturday] {};
+\node at (3,-15) [sunday] {};
+\node at (3,-16) [day] {};
+\node at (3,-17) [day] {};
+\node at (3,-18) [day] {};
+\node at (3,-19) [day] {};
+\node at (3,-20) [day] {};
+\node at (3,-21) [saturday] {};
+\node at (3,-22) [sunday] {};
+\node at (3,-23) [day] {};
+\node at (3,-24) [day] {};
+\node at (3,-25) [day] {};
+\node at (3,-26) [day] {};
+\node at (3,-27) [day] {};
+\node at (3,-28) [saturday] {};
+\node at (3,-29) [sunday] {};
+\node at (3,-30) [day] {};
+
+\node at (4,-1) [day] {};
+\node at (4,-2) [day] {};
+\node at (4,-3) [day] {};
+\node at (4,-4) [day] {};
+\node at (4,-5) [saturday] {};
+\node at (4,-6) [sunday] {};
+\node at (4,-7) [day] {};
+\node at (4,-8) [day] {};
+\node at (4,-9) [day] {};
+\node at (4,-10) [day] {};
+\node at (4,-11) [day] {};
+\node at (4,-12) [saturday] {};
+\node at (4,-13) [sunday] {};
+\node at (4,-14) [day] {};
+\node at (4,-15) [day] {};
+\node at (4,-16) [day] {};
+\node at (4,-17) [day] {};
+\node at (4,-18) [day] {};
+\node at (4,-19) [saturday] {};
+\node at (4,-20) [sunday] {};
+\node at (4,-21) [day] {};
+\node at (4,-22) [day] {};
+\node at (4,-23) [day] {};
+\node at (4,-24) [day] {};
+\node at (4,-25) [day] {};
+\node at (4,-26) [saturday] {};
+\node at (4,-27) [sunday] {};
+\node at (4,-28) [day] {};
+\node at (4,-29) [day] {};
+\node at (4,-30) [day] {};
+\node at (4,-31) [day] {};
+
+\node at (5,-1) [day] {};
+\node at (5,-2) [saturday] {};
+\node at (5,-3) [sunday] {};
+\node at (5,-4) [day] {};
+\node at (5,-5) [day] {};
+\node at (5,-6) [day] {};
+\node at (5,-7) [day] {};
+\node at (5,-8) [day] {};
+\node at (5,-9) [saturday] {};
+\node at (5,-10) [sunday] {};
+\node at (5,-11) [day] {};
+\node at (5,-12) [day] {};
+\node at (5,-13) [day] {};
+\node at (5,-14) [day] {};
+\node at (5,-15) [day] {};
+\node at (5,-16) [saturday] {};
+\node at (5,-17) [sunday] {};
+\node at (5,-18) [day] {};
+\node at (5,-19) [day] {};
+\node at (5,-20) [day] {};
+\node at (5,-21) [day] {};
+\node at (5,-22) [day] {};
+\node at (5,-23) [saturday] {};
+\node at (5,-24) [sunday] {};
+\node at (5,-25) [day] {};
+\node at (5,-26) [day] {};
+\node at (5,-27) [day] {};
+\node at (5,-28) [day] {};
+\node at (5,-29) [day] {};
+\node at (5,-30) [saturday] {};
+
+
+\node at (6,-1) [sunday] {};
+\node at (6,-2) [day] {};
+\node at (6,-3) [day] {};
+\node at (6,-4) [day] {};
+\node at (6,-5) [day] {};
+\node at (6,-6) [day] {};
+\node at (6,-7) [saturday] {};
+\node at (6,-8) [sunday] {};
+\node at (6,-9) [day] {};
+\node at (6,-10) [day] {};
+\node at (6,-11) [day] {};
+\node at (6,-12) [day] {};
+\node at (6,-13) [day] {};
+\node at (6,-14) [saturday] {};
+\node at (6,-15) [sunday] {};
+\node at (6,-16) [day] {};
+\node at (6,-17) [day] {};
+\node at (6,-18) [day] {};
+\node at (6,-19) [day] {};
+\node at (6,-20) [day] {};
+\node at (6,-21) [saturday] {};
+\node at (6,-22) [sunday] {};
+\node at (6,-23) [day] {};
+\node at (6,-24) [day] {};
+\node at (6,-25) [day] {};
+\node at (6,-26) [day] {};
+\node at (6,-27) [day] {};
+\node at (6,-28) [saturday] {};
+\node at (6,-29) [sunday] {};
+\node at (6,-30) [day] {};
+\node at (6,-31) [day] {};
+
+\node at (7,-1) [day] {};
+\node at (7,-2) [day] {};
+\node at (7,-3) [day] {};
+\node at (7,-4) [saturday] {};
+\node at (7,-5) [sunday] {};
+\node at (7,-6) [day] {};
+\node at (7,-7) [day] {};
+\node at (7,-8) [day] {};
+\node at (7,-9) [day] {};
+\node at (7,-10) [day] {};
+\node at (7,-11) [saturday] {};
+\node at (7,-12) [sunday] {};
+\node at (7,-13) [day] {};
+\node at (7,-14) [day] {};
+\node at (7,-15) [day] {};
+\node at (7,-16) [day] {};
+\node at (7,-17) [day] {};
+\node at (7,-18) [saturday] {};
+\node at (7,-19) [sunday] {};
+\node at (7,-20) [day] {};
+\node at (7,-21) [day] {};
+\node at (7,-22) [day] {};
+\node at (7,-23) [day] {};
+\node at (7,-24) [day] {};
+\node at (7,-25) [saturday] {};
+\node at (7,-26) [sunday] {};
+\node at (7,-27) [day] {};
+\node at (7,-28) [day] {};
+\node at (7,-29) [day] {};
+\node at (7,-30) [day] {};
+
+
+\node at (8,-1) [day] {};
+\node at (8,-2) [sunday] {};
+\node at (8,-3) [sunday] {};
+\node at (8,-4) [day] {};
+\node at (8,-5) [day] {};
+\node at (8,-6) [day] {};
+\node at (8,-7) [day] {};
+\node at (8,-8) [day] {};
+\node at (8,-9) [sunday] {};
+\node at (8,-10) [sunday] {};
+\node at (8,-11) [day] {};
+\node at (8,-12) [day] {};
+\node at (8,-13) [day] {};
+\node at (8,-14) [day] {};
+\node at (8,-15) [day] {};
+\node at (8,-16) [sunday] {};
+\node at (8,-17) [sunday] {};
+\node at (8,-18) [day] {};
+\node at (8,-19) [day] {};
+\node at (8,-20) [day] {};
+\node at (8,-21) [day] {};
+\node at (8,-22) [day] {};
+\node at (8,-23) [sunday] {};
+\node at (8,-24) [sunday] {};
+\node at (8,-25) [day] {};
+\node at (8,-26) [day] {};
+\node at (8,-27) [day] {};
+\node at (8,-28) [day] {};
+\node at (8,-29) [day] {};
+\node at (8,-30) [saturday] {};
+\node at (8,-31) [sunday] {};
+
+
+\node at (9,-1) [day] {};
+\node at (9,-2) [day] {Uwe};
+\node at (9,-3) [day] {};
+\node at (9,-4) [day] {};
+\node at (9,-5) [day] {Dieter};
+\node at (9,-6) [saturday] {};
+\node at (9,-7) [sunday] {};
+\node at (9,-8) [day] {};
+\node at (9,-9) [day] {};
+\node at (9,-10) [day] {};
+\node at (9,-11) [day] {};
+\node at (9,-12) [day] {};
+\node at (9,-13) [saturday] {};
+\node at (9,-14) [sunday] {};
+\node at (9,-15) [day] {};
+\node at (9,-16) [day] {};
+\node at (9,-17) [day] {Oma};
+\node at (9,-18) [day] {};
+\node at (9,-19) [day] {};
+\node at (9,-20) [saturday] {};
+\node at (9,-21) [sunday] {};
+\node at (9,-22) [day] {};
+\node at (9,-23) [day] {};
+\node at (9,-24) [day] {Kai};
+\node at (9,-25) [day] {};
+\node at (9,-26) [day] {};
+\node at (9,-27) [saturday] {};
+\node at (9,-28) [sunday] {};
+\node at (9,-29) [day] {Agata};
+\node at (9,-30) [day] {};
+\node at (9,-31) [day] {};
+
+\node at (10,-1) [day] {};
+\node at (10,-2) [day] {};
+\node at (10,-3) [saturday] {};
+\node at (10,-4) [sunday] {};
+\node at (10,-5) [day] {};
+\node at (10,-6) [day] {};
+\node at (10,-7) [day] {};
+\node at (10,-8) [day] {};
+\node at (10,-9) [day] {};
+\node at (10,-10) [saturday] {};
+\node at (10,-11) [sunday] {};
+\node at (10,-12) [day] {};
+\node at (10,-13) [day] {};
+\node at (10,-14) [day] {};
+\node at (10,-15) [day] {};
+\node at (10,-16) [day] {};
+\node at (10,-17) [saturday] {};
+\node at (10,-18) [sunday] {};
+\node at (10,-19) [day] {};
+\node at (10,-20) [day] {};
+\node at (10,-21) [day] {};
+\node at (10,-22) [day] {};
+\node at (10,-23) [day] {};
+\node at (10,-24) [saturday] {};
+\node at (10,-25) [sunday] {};
+\node at (10,-26) [day] {};
+\node at (10,-27) [day] {};
+\node at (10,-28) [day] {};
+\node at (10,-29) [day] {};
+\node at (10,-30) [day] {};
+
+
+\node at (11,-1) [saturday] {};
+\node at (11,-2) [sunday] {};
+\node at (11,-3) [day] {};
+\node at (11,-4) [day] {};
+\node at (11,-5) [day] {};
+\node at (11,-6) [day] {};
+\node at (11,-7) [day] {};
+\node at (11,-8) [saturday] {};
+\node at (11,-9) [sunday] {};
+\node at (11,-10) [day] {};
+\node at (11,-11) [day] {};
+\node at (11,-12) [day] {};
+\node at (11,-13) [day] {};
+\node at (11,-14) [day] {};
+\node at (11,-15) [saturday] {};
+\node at (11,-16) [sunday] {};
+\node at (11,-17) [day] {};
+\node at (11,-18) [day] {};
+\node at (11,-19) [day] {};
+\node at (11,-20) [day] {};
+\node at (11,-21) [day] {};
+\node at (11,-22) [saturday] {};
+\node at (11,-23) [sunday] {};
+\node at (11,-24) [day] {};
+\node at (11,-25) [day] {};
+\node at (11,-26) [day] {};
+\node at (11,-27) [day] {};
+\node at (11,-28) [day] {};
+\node at (11,-29) [saturday] {};
+\node at (11,-30) [sunday] {};
+\node at (11,-31) [day] {};
+
+
+
+\end{tikzpicture}
+\end{center}
+ 
+\end{document}
