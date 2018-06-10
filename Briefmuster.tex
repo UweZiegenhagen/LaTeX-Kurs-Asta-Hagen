@@ -1,0 +1,61 @@
+\documentclass[DIN,parskip=half,fontsize=12pt,fromalign=right,fromrule=afteraddress,ngerman,enlargefirstpage=true]{scrlttr2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lastpage}
+\usepackage{babel}
+
+\setkomafont{pageheadfoot}{}
+ 
+\firsthead{
+\textsc{Dr.~\usekomavar{fromname} \hfill \thepage/\pageref{LastPage}} 
+\vspace*{1em}
+\hrule
+}
+ 
+ 
+%\usepackage[sfdefault]{plex-sans}
+%\usepackage[]{microtype}
+ 
+\newkomavar{fromplace}
+\newkomavar{keywords}
+\newkomavar{IBAN}
+\newkomavar{BIC}
+ 
+\setkomavar{IBAN}[IBAN]{DE12\,3456\,0123\,1234\,1234\,99}
+\setkomavar{BIC}[BIC]{ABCDEFGHEI}
+ 
+\setkomavar{yourref}{xyz-203052}
+\setkomavar{yourmail}{\today}
+\setkomavar{myref}[Mein Zeichen]{1929424487}
+\setkomavar{fromname}{Max Mustermann}
+\setkomavar{fromplace}{Hamburg}
+\setkomavar{fromemail}{mustermann@gmail.com}
+\setkomavar{frommobilephone}[Mobil:]{+49 (0) 123\,456\,7890}
+\setkomavar{fromaddress}{Musterweg 19, 12345 Hamburg}
+\setkomavar{subject}{Betreff}
+\setkomavar{keywords}{Finanzamt}
+ 
+ 
+\pagestyle{myheadings}
+ 
+\setkomavar{nexthead}{Dr.~\usekomavar{fromname}, \today \hfill\thepage/\pageref{LastPage}}
+\setkomavar{nextfoot}{}
+ 
+ 
+\setkomavar{firstfoot}{%
+\hrule
+E-Mail: \usekomavar{fromemail} \hfill \usekomavar*{frommobilephone}~\usekomavar{frommobilephone} \newline
+\usekomavar*{IBAN}:~\usekomavar{IBAN}  \hfill \usekomavar*{BIC}:~\usekomavar{BIC}}
+ 
+\begin{document}
+\begin{letter}{Maria Mustermann \\ Musterweg 2 \\ 12345 Musterstadt}
+\opening{Sehr geehrte Damen und Herren,} 
+
+Schon die Urvölker, dann das durch Einwanderung entstandene Mischvolk der Etrusker haben Bauten hinterlassen, welche nicht bloß durch Massenhaftigkeit, sondern auch schon durch Anfänge eines höhern Formgefühles ausgezeichnet sind. Allein in ihrem jetzigen Zustande gehören sie doch mehr der Archäologie an; sie liegen meist seitab von den üblichen Straßen und sind auch dem Verfasser dieses Buches größtenteils unzugänglich geblieben. Überdies ist zwischen ihnen und den Bauten der vollendeten antiken Kunst eine große Lücke. Der Zweck unseres Buches verlangt, daß wir sie übergehen, um uns auf solche Denkmäler zu beschränken, in welchen die höhere Kunstform das Wesentliche, der Hauptausdruck der monumentalen Absicht ist. Welchem Gebäude des italischen Festlandes hier die erste Stelle gebührt, darüber wird wohl kein Zweifel herrschen.
+ 
+\closing{Mit freundlichen Grüßen}
+ 
+\encl{Kopie }
+\end{letter}
+\end{document}
