@@ -1,0 +1,72 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\listoftables
+
+\clearpage
+
+\begin{tabular}{|l|c|r|p{5cm}|} \hline
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \hline
+12345 & Hallo Welt & Foo & Hallo Leute, mögt ihr TeX \\ \hline
+4234  & Hallo & fidsoif dsif & Ja, na klar \\ \hline
+\end{tabular}\vspace*{2cm}
+
+
+
+\begin{tabular}{lcrp{5cm}} \toprule[3pt]
+Spalte 1 & Spalte 2 & Spalte 3 & Spalte 4 \\ \midrule
+12345 & Hallo Welt & Foo & Hallo Leute, mögt ihr TeX \\ \midrule
+4234  & Hallo & fidsoif dsif & Ja, na klar \\ \bottomrule[3pt]
+\end{tabular}\vspace*{2cm}
+
+
+
+\begin{tabular}{lcrp{5cm}} \toprule[2pt]
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \cmidrule[1pt](rl){1-4}
+12345 & Hallo Welt & Foo & Hallo Leute, mögt ihr TeX \\ \cmidrule[1pt](rl){1-4}
+\addlinespace[1.5em]
+4234  & Hallo & fidsoif dsif & Ja, na klar \\ \bottomrule[2pt]
+\end{tabular}
+
+
+\begin{table}[h]
+\begin{center}
+\caption{Der Mensch in der digitalen Welt ist getrieben von Technik, die ihn ablenkt und vertreibt}\label{tab:tabelle1}
+
+\begin{tabular}{lcrp{5cm}} \toprule[2pt]
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \cmidrule[1pt](rl){1-4}
+12345 & Hallo Welt & Foo & Hallo Leute, mögt ihr TeX \\ \cmidrule[1pt](rl){1-4}
+\addlinespace[1.5em]
+4234  & Hallo & fidsoif dsif & Ja, na klar \\ \bottomrule[2pt]
+\end{tabular}
+
+\end{center}
+\end{table}
+
+
+\begin{table}[h]
+\begin{center}
+\caption[Kurze Version der Caption]{Der Mensch in der digitalen Welt ist getrieben von Technik, die ihn ablenkt und vertreibt, siehe www.google.de}\label{tab:tabelle1}
+
+\begin{tabular}{p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.2\textwidth}} \toprule[2pt]
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4} \\ \cmidrule[1pt](rl){1-4}
+12345 & Hallo Welt & Foo & Hallo Leute, mögt ihr TeX \\ \cmidrule[1pt](rl){1-4}
+\addlinespace[1.5em]
+4234  & Hallo & fidsoif dsif & Ja, na klar \\ \bottomrule[2pt]
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Hallo Leute\footnote{Siehe google.de}
+
+
+
+\end{document}
