@@ -45,13 +45,13 @@ WICHTIG: Nach der Anmeldung zum Seminar bitte folgendes tun:
 
 * 10:00 Uhr: Bibliografien verwalten und setzen
 
-* 11:00 Uhr: Einfache Grafiken erzeugen mit TikZ
+* 11:00 Uhr: Briefe schreiben mit scrlttr2
 
 * 12:00 Uhr: Mittagspause
 
 * 13:00 Uhr: Präsentationen mit Beamer
 
-* 15:00 Uhr: Briefe schreiben mit scrlttr2
+* 15:00 Uhr: Einfache Grafiken erzeugen mit TikZ
 
 * 16:00 Uhr: Frage und Antwort-Runde
 

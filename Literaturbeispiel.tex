@@ -1,3 +1,8 @@
+%!TEX TS-program = Arara
+% arara: pdflatex
+% arara: biber
+% arara: pdflatex
+
 \documentclass[11pt,ngerman]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -10,7 +15,7 @@
 
 \begin{document}
 
-\cite{knuth:1998}
+\cite{knuth:1998} \cite{knuth:1998} \cite{knuth:1998}
 
 \clearpage
 
@@ -36,7 +41,7 @@
 
 \citeyear{knuth:1998}
 
-\nocite{*}
+\nocite{*} % Alle Einträge auflisten, nicht nur die tatsächlich zitierten
 
 \printbibliography
 
