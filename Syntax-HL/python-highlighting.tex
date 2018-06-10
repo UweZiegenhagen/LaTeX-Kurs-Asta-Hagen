@@ -11,8 +11,6 @@
 \usepackage{xcolor}
 \usepackage{listings}
 
-\usepackage[]{iwona}
-
 \lstset{literate=%
     {Ö}{{\"O}}1
     {Ä}{{\"A}}1
@@ -23,28 +21,6 @@
     {ö}{{\"o}}1
     {~}{{\textasciitilde}}1
 }
-
-\begin{document}
-
-
-\begin{lstlisting}[language={[LaTeX]TeX}]
-
-%!TEX TS-program = Arara
-% arara: pdflatex
-\documentclass[12pt,ngerman]{scrartcl}
-
-\begin{document}
-
-Hallo Welt
-
-\end{document}
-\end{lstlisting}
-
-\lstinputlisting[language=Python]{somePython.py}
-
-
-\end{document}
-
 
 \definecolor{hellgelb}{rgb}{1,1,0.8}
 \definecolor{colKeys}{rgb}{0,0,1}
@@ -74,3 +50,31 @@ Hallo Welt
     breakautoindent=true, %
     captionpos=b%
 }
+
+
+\begin{document}
+
+
+\begin{lstlisting}[language={[LaTeX]TeX}]
+%!TEX TS-program = Arara
+% arara: pdflatex
+\documentclass[12pt,ngerman]{scrartcl}
+
+\begin{document}
+
+Hallo Welt
+
+\end{document}
+\end{lstlisting}
+
+\lstinputlisting[language=Python,morekeywords={addHandler,setFormatter}]{somePython.py}
+
+
+\lstinputlisting[language=Python,firstline=5,lastline=10,morekeywords={addHandler,setFormatter}]{somePython.py}
+
+
+
+\end{document}
+
+
+
