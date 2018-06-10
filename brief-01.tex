@@ -1,0 +1,39 @@
+\documentclass[12pt,ngerman]{scrlttr2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+%\usepackage[sfdefault]{plex-sans}
+\usepackage{iwona}
+
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromemail}{mustermann@gmail.com}
+\setkomavar{frommobilephone}[Mobil:]{+49 (0) 123\,456\,7890}
+\setkomavar{fromaddress}{Arme-Leute-Weg 1, 12346 Entenhausen}
+
+
+\setkomavar{subject}{Bitte um Geld}
+\setkomavar{yourref}[kram]{2018-dago-1}
+\setkomavar{yourmail}{01.01.2018}
+\setkomavar{myref}{2018-donald-21}
+
+\firstfoot{%
+\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+E-Mail-Adresse & Mobilnummer \\
+\usekomavar{fromemail} &  \usekomavar{frommobilephone} \\
+\end{tabular}
+}
+
+
+\begin{document}
+
+\begin{letter}{Dagobert Duck \\ Am Geldspeicher 1 \\ 12345 Entenhausen}
+\opening{Sehr geehrter Dagobert,}
+
+bitte gib uns etwas Geld.
+
+\closing{Mit freundlichen Grüßen,}
+\end{letter}
+
+\end{document}
