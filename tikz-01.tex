@@ -1,0 +1,37 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{tikz}
+
+% Sucht nach minimaltikz.pdf im Netz
+
+\begin{document}
+
+\begin{tikzpicture}[scale=1.5,
+    punkt/.style={circle, minimum size = 1cm,blue,fill=yellow},
+]
+
+\node[] (A) at (9,1){A};
+\node[draw] (B) at (8,4){B};
+
+\draw (A) -- (B);
+
+\draw[help lines,gray,thin] (0,0) grid (10,5);
+\draw [->,very thick] (0,0) -- (5,0);
+\draw [->,very thick] (0,0) -- (0,5);
+\draw [very thick] (0,0) -- (1,2) -- (3,3);
+\draw [dashed, ultra thick] (5,5) -- (2,2);
+
+\node  [punkt] at (7,3){Knoten};
+
+\node [below] at (4,2) {below};
+\node [above] at (4,2) {above};
+\node [left] at (4,2) {left};
+\node [right] at (4,2) {right};
+
+\end{tikzpicture}
+
+
+\end{document}
